@@ -1,18 +1,15 @@
-"# PHP-aula07-ex1" 
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<!-- 2019-09-30 seg 19:32 -->
+<head>
+<!-- 2019-10-01 ter 16:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
-  <!--/*--><![CDATA[/*><!--*/
-  body { font-family: 'Open Sans', sans-serif; }
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -180,7 +177,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  pre, code {font-family: 'Open Sans', sans-serif;}
   /*]]>*/-->
 </style>
 <script type="text/javascript">
@@ -236,43 +232,32 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2ebcabf">1. Classes</a>
+<li><a href="#orgcdb2cf3">1. Classes</a>
 <ul>
-<li><a href="#org0bd4286">1.1. Definir uma classe</a></li>
-<li><a href="#org33bca5e">1.2. Definindo objetos</a></li>
-<li><a href="#org1ca68b0">1.3. Utilizando métodos</a></li>
-<li><a href="#orgfec5234">1.4. Modificador de acesso</a></li>
-<li><a href="#org445992b">1.5. Construtor</a></li>
+<li><a href="#orge49c4e7">1.1. Definir uma classe</a></li>
+<li><a href="#org1fe9756">1.2. Definindo objetos</a></li>
+<li><a href="#org3d840c2">1.3. Utilizando m�todos</a></li>
+<li><a href="#orgbdb9e90">1.4. Modificador de acesso</a></li>
+<li><a href="#orga5334f5">1.5. Construtor</a></li>
 </ul>
 </li>
-<li><a href="#orgfd115e0">2. Mysqli orientado a objetos</a>
+<li><a href="#org8096daf">2. Mysqli orientado a objetos</a>
 <ul>
-<li><a href="#orgbd4a5d1">2.1. Abrindo a conexão</a></li>
-<li><a href="#org585b758">2.2. Fechar a conexão</a></li>
-<li><a href="#orgd4ef660">2.3. Exercício 1</a></li>
-<li><a href="#org446d13b">2.4. Criando banco de dados</a></li>
-<li><a href="#orgb0062ca">2.5. Exercício 2</a></li>
-<li><a href="#orgaa36d08">2.6. Criando tabelas</a></li>
-<li><a href="#org4859951">2.7. Exercício 3</a></li>
-<li><a href="#org5307ab0">2.8. Inserindo dados</a></li>
-<li><a href="#org1142516">2.9. Exercício 4</a></li>
-<li><a href="#org4e3fc75">2.10. Exercício 5</a></li>
-<li><a href="#orgf6985a5">2.11. Exercício 6</a></li>
-<li><a href="#org58cb6b3">2.12. Exercício 7</a></li>
-<li><a href="#orgcb95734">2.13. Exercício 8</a></li>
-<li><a href="#org4b3e119">2.14. Exercício 9</a></li>
+<li><a href="#orge6b7b35">2.1. Abrindo a conex�o</a></li>
+<li><a href="#org4bd8956">2.2. Fechar a conex�o</a></li>
+<li><a href="#org022169f">2.3. Exerc�cio 1</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2ebcabf" class="outline-2">
-<h2 id="org2ebcabf"><span class="section-number-2">1</span> Classes</h2>
+<div id="outline-container-orgcdb2cf3" class="outline-2">
+<h2 id="orgcdb2cf3"><span class="section-number-2">1</span> Classes</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org0bd4286" class="outline-3">
-<h3 id="org0bd4286"><span class="section-number-3">1.1</span> Definir uma classe</h3>
+<div id="outline-container-orge49c4e7" class="outline-3">
+<h3 id="orge49c4e7"><span class="section-number-3">1.1</span> Definir uma classe</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 A palavra chave <b>class</b> define uma classe em PHP:
@@ -282,12 +267,12 @@ A palavra chave <b>class</b> define uma classe em PHP:
 class Carro {
   // propriedades do carro
 
-  // métodos do carro
+  // m�todos do carro
 }
 </pre>
 
 <p>
-Ajustamos as propriedades como variáveis dentro da classe:
+Ajustamos as propriedades como vari�veis dentro da classe:
 </p>
 
 <pre class="example">
@@ -296,12 +281,12 @@ class Carro {
   $cor = "black";
   $rodas = 14;
 
-  // métodos do carro
+  // m�todos do carro
 }
 </pre>
 
 <p>
-Métodos são ajustados como funções dentro da classe.
+M�todos s�o ajustados como fun��es dentro da classe.
 </p>
 
 <pre class="example">
@@ -323,8 +308,8 @@ class Carro {
 </div>
 </div>
 
-<div id="outline-container-org33bca5e" class="outline-3">
-<h3 id="org33bca5e"><span class="section-number-3">1.2</span> Definindo objetos</h3>
+<div id="outline-container-org1fe9756" class="outline-3">
+<h3 id="org1fe9756"><span class="section-number-3">1.2</span> Definindo objetos</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Definidas as classes podemos criar objetos usando <b>new</b>:
@@ -356,11 +341,11 @@ $ferrari = new Carro();
 </div>
 </div>
 
-<div id="outline-container-org1ca68b0" class="outline-3">
-<h3 id="org1ca68b0"><span class="section-number-3">1.3</span> Utilizando métodos</h3>
+<div id="outline-container-org3d840c2" class="outline-3">
+<h3 id="org3d840c2"><span class="section-number-3">1.3</span> Utilizando m�todos</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
-Criados os objetos podemos utilizar os métodos usando <b>-&gt;</b>:
+Criados os objetos podemos utilizar os m�todos usando <b>-&gt;</b>:
 </p>
 
 <pre class="example">
@@ -379,17 +364,17 @@ echo $ferrari-&gt;get_velocidade();
 </div>
 </div>
 
-<div id="outline-container-orgfec5234" class="outline-3">
-<h3 id="orgfec5234"><span class="section-number-3">1.4</span> Modificador de acesso</h3>
+<div id="outline-container-orgbdb9e90" class="outline-3">
+<h3 id="orgbdb9e90"><span class="section-number-3">1.4</span> Modificador de acesso</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
-Podemos modificar o tipo de acesso das propriedades da classe e dos métodos:
+Podemos modificar o tipo de acesso das propriedades da classe e dos m�todos:
 </p>
 
 <ul class="org-ul">
-<li>public - a propriedade ou método pode ser vista por qualquer um (padrão).</li>
-<li>protected - somente a própria classe e derivadas podem acessar a propriedade ou método.</li>
-<li>private - somente a própria classe pode acessar a propriedade ou método.</li>
+<li>public - a propriedade ou m�todo pode ser vista por qualquer um (padr�o).</li>
+<li>protected - somente a pr�pria classe e derivadas podem acessar a propriedade ou m�todo.</li>
+<li>private - somente a pr�pria classe pode acessar a propriedade ou m�todo.</li>
 </ul>
 
 <pre class="example">
@@ -419,15 +404,15 @@ echo $ferrari-&gt;velocidade;
 </div>
 </div>
 
-<div id="outline-container-org445992b" class="outline-3">
-<h3 id="org445992b"><span class="section-number-3">1.5</span> Construtor</h3>
+<div id="outline-container-orga5334f5" class="outline-3">
+<h3 id="orga5334f5"><span class="section-number-3">1.5</span> Construtor</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
-A função __construct permite inicializar uma propriedade de um objeto no momento da criação do objeto.
+A fun��o __construct permite inicializar uma propriedade de um objeto no momento da cria��o do objeto.
 </p>
 
 <p>
-Se você criar uma função <b>__construct()</b> o PHP vai executá-la automaticamente quando você criar um objeto da classe.
+Se voc� criar uma fun��o <b>__construct()</b> o PHP vai execut�-la automaticamente quando voc� criar um objeto da classe.
 </p>
 
 <pre class="example">
@@ -449,22 +434,22 @@ class Carro {
 
 $ferrari = new Carro();
 
-echo $ferrari-&gt;velocidade; // Começa com 10
+echo $ferrari-&gt;velocidade; // Come�a com 10
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orgfd115e0" class="outline-2">
-<h2 id="orgfd115e0"><span class="section-number-2">2</span> Mysqli orientado a objetos</h2>
+<div id="outline-container-org8096daf" class="outline-2">
+<h2 id="org8096daf"><span class="section-number-2">2</span> Mysqli orientado a objetos</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgbd4a5d1" class="outline-3">
-<h3 id="orgbd4a5d1"><span class="section-number-3">2.1</span> Abrindo a conexão</h3>
+<div id="outline-container-orge6b7b35" class="outline-3">
+<h3 id="orge6b7b35"><span class="section-number-3">2.1</span> Abrindo a conex�o</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Antes de acessar os dados em um banco de dados MySQL, você precisa se conectar ao servidor:
+Antes de acessar os dados em um banco de dados MySQL, voc� precisa se conectar ao servidor:
 </p>
 
 <pre class="example">
@@ -474,336 +459,49 @@ $servidor = "localhost";
 $usuario = "root";
 $senha = "toor";
 
-// Cria a conexão:
+// Cria a conex�o:
 // Novo objeto!
 $conexao = new mysqli($servidor, $usuario, $senha);
 
-// Verifica a conexão
+// Verifica a conex�o
 // Atributo do objeto $conexao
 if( $conexao-&gt;connect_error ) {
-   die("A conexão falhou: " . $conexao-&gt;connect_error());
+   die("A conex�o falhou: " . $conexao-&gt;connect_error());
 }
 
-echo "Conexão realizada com sucesso!";
+echo "Conex�o realizada com sucesso!";
 ?&gt;
 </pre>
 </div>
 </div>
 
 
-<div id="outline-container-org585b758" class="outline-3">
-<h3 id="org585b758"><span class="section-number-3">2.2</span> Fechar a conexão</h3>
+<div id="outline-container-org4bd8956" class="outline-3">
+<h3 id="org4bd8956"><span class="section-number-3">2.2</span> Fechar a conex�o</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Quando o script termina, a conexão com o banco de dados é fechada automaticamente. Mas podemos fechá-la antes:
+Quando o script termina, a conex�o com o banco de dados � fechada automaticamente. Mas podemos fech�-la antes:
 </p>
 
 <pre class="example">
-// método do objeto $conexao
+// m�todo do objeto $conexao
 $conexao-&gt;close();
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgd4ef660" class="outline-3">
-<h3 id="orgd4ef660"><span class="section-number-3">2.3</span> Exercício 1</h3>
+<div id="outline-container-org022169f" class="outline-3">
+<h3 id="org022169f"><span class="section-number-3">2.3</span> Exerc�cio 1</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
-Crie uma página php chamada (teste.php) que verifica se a conexão com o servidor de banco de dados está sendo feita corretamente utilizando mysqli orientado a objetos.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org446d13b" class="outline-3">
-<h3 id="org446d13b"><span class="section-number-3">2.4</span> Criando banco de dados</h3>
-<div class="outline-text-3" id="text-2-4">
-<p>
-Para criar o banco em PHP você efetua uma consulta (query) com o comando de criação:
-</p>
-
-<pre class="example">
-$sql = "CREATE DATABASE prova";
-
-// executando um método de $conexao
-if ($conexao-&gt;query($sql) === TRUE) {
-    echo "Banco de dados criado";
-} else {
-    // acessando a propriedade error de $conexao
-    echo "Erro na criação do banco: " . $conexao-&gt;error; 
-}
-</pre>
-
-<p>
-A página completa deve:
-</p>
-
-<ul class="org-ul">
-<li>criar a conexão com o servidor de banco de dados</li>
-<li>efetuar a consulta</li>
-<li>fechar a conexão</li>
-</ul>
-
-<pre class="example">
-&lt;?php
-
-$servidor = "localhost";
-$usuario = "root";
-$senha = "toor";
-
-// Cria a conexão:
-// Novo objeto!
-$conexao = new mysqli($servidor, $usuario, $senha);
-
-// Verifica a conexão
-// Atributo do objeto $conexao
-if( $conexao-&gt;connect_error ) {
-   die("A conexão falhou: " . $conexao-&gt;connect_error());
-}
-
-echo "Conexão realizada com sucesso!";
-
-$sql = "CREATE DATABASE prova";
-
-// executando um método de $conexao
-if ($conexao-&gt;query($sql) === TRUE) {
-    echo "Banco de dados criado";
-} else {
-    // acessando a propriedade error de $conexao
-    echo "Erro na criação do banco: " . $conexao-&gt;error; 
-}
-
-// método do objeto $conexao
-$conexao-&gt;close();
-?&gt;
-</pre>
-</div>
-</div>
-
-<div id="outline-container-orgb0062ca" class="outline-3">
-<h3 id="orgb0062ca"><span class="section-number-3">2.5</span> Exercício 2</h3>
-<div class="outline-text-3" id="text-2-5">
-<p>
-Escreva uma página em php (cria.php) que cria um banco de dados chamado: prova.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgaa36d08" class="outline-3">
-<h3 id="orgaa36d08"><span class="section-number-3">2.6</span> Criando tabelas</h3>
-<div class="outline-text-3" id="text-2-6">
-<p>
-O método mysqli para executar um comando SQL é:
-</p>
-
-<pre class="example">
-$conexao-&gt;query($sql)
-</pre>
-
-<p>
-A página completa orientada a objetos é:
-</p>
-
-<pre class="example">
-&lt;?php
-$servidor = "localhost";
-$usuario = "root";
-$senha = "toor";
-$banco = "bdEscola"; // novo campo
-
-// Cria a conexão:
-// Novo objeto!
-$conexao = new mysqli($servidor, $usuario, $senha, $banco);
-
-// Verifica a conexão
-// Atributo do objeto $conexao
-if( $conexao-&gt;connect_error ) {
-   die("A conexão falhou: " . $conexao-&gt;connect_error());
-}
-
-echo "Conexão realizada com sucesso!";
-
-$sql = "CREATE TABLE alunos (
-   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-   nome VARCHAR(40) NOT NULL,
-   nota VARCHAR(5)
-)";
-
-// executando um método de $conexao
-if ($conexao-&gt;query($sql) === TRUE) {
-    echo "Tabela criada com sucesso!&lt;br&gt;";
-} else {
-    // acessando a propriedade error de $conexao
-    echo "Erro na criação da tabela: " . $conexao-&gt;error; 
-}
-
-// método do objeto $conexao
-$conexao-&gt;close();
-?&gt;
-</pre>
-</div>
-</div>
-
-<div id="outline-container-org4859951" class="outline-3">
-<h3 id="org4859951"><span class="section-number-3">2.7</span> Exercício 3</h3>
-<div class="outline-text-3" id="text-2-7">
-<p>
-Implementar usando mysqli:
-</p>
-
-<p>
-Site com lista de compras:
-</p>
-
-<p>
-Criar as Tabelas:
-</p>
-
-<ul class="org-ul">
-<li>pessoas (nome, email, senha)</li>
-<li>itens (lista, nome, estado[1-ativo,0-excluido])</li>
-<li>listas (nome, dono, estado[1-ativa,0-excluida])</li>
-<li>compartilhar (lista, pessoa)</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org5307ab0" class="outline-3">
-<h3 id="org5307ab0"><span class="section-number-3">2.8</span> Inserindo dados</h3>
-<div class="outline-text-3" id="text-2-8">
-<p>
-Depois de criar o banco e a tabela podemos adicionar dados.
-</p>
-
-<p>
-As regras são:
-</p>
-
-<ul class="org-ul">
-<li>A consulta SQL deve ser escrita entre aspas.</li>
-<li>Os valores que são string dentro da consulta devem aparecer entre apóstrofos</li>
-<li>Valores numéricos não devem ser colocados em apóstrofos</li>
-<li>A palavra NULL não deve ser colocada entre apóstrofos</li>
-</ul>
-
-<p>
-O comando abaixo é usado para inserir dados:
-</p>
-
-<pre class="example">
-INSERT INTO nome_tabela (coluna1, coluna2, coluna3,...)
-VALUES (valor1, valor2, valor3,...)
-</pre>
-
-<p>
-Para inserir dados na tabela <b>alunos</b> temos o comando:
-</p>
-
-<pre class="example">
-INSERT INTO alunos (nome, nota) VALUES ('Fulano', '5.5')
-</pre>
-
-<p>
-Note que a nota aparece entre apóstrofos (') porque é armazenada em um campo com tipo VARCHAR.
-</p>
-
-<p>
-Novamente a página de inserção de dados é bem parecida com a página de criação de tabela.
-</p>
-
-<pre class="example">
-&lt;?php
-$servidor = "localhost";
-$usuario = "root";
-$senha = "toor";
-$banco = "bdEscola"; // novo campo
-
-// Cria a conexão:
-// Novo objeto!
-$conexao = new mysqli($servidor, $usuario, $senha, $banco);
-
-// Verifica a conexão
-// Atributo do objeto $conexao
-if( $conexao-&gt;connect_error ) {
-   die("A conexão falhou: " . $conexao-&gt;connect_error());
-}
-
-echo "Conexão realizada com sucesso!";
-
-$sql = "INSERT INTO alunos (nome, nota) 
-VALUES ('Fulano', '5.5')";
-
-// executando um método de $conexao
-if ($conexao-&gt;query($sql) === TRUE) {
-    echo "Tabela criada com sucesso!&lt;br&gt;";
-} else {
-    // acessando a propriedade error de $conexao
-    echo "Erro na criação da tabela: " . $conexao-&gt;error; 
-}
-
-// método do objeto $conexao
-$conexao-&gt;close();
-?&gt;
-</pre>
-</div>
-</div>
-
-<div id="outline-container-org1142516" class="outline-3">
-<h3 id="org1142516"><span class="section-number-3">2.9</span> Exercício 4</h3>
-<div class="outline-text-3" id="text-2-9">
-<p>
-Crie uma página que cadastre o usuário.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org4e3fc75" class="outline-3">
-<h3 id="org4e3fc75"><span class="section-number-3">2.10</span> Exercício 5</h3>
-<div class="outline-text-3" id="text-2-10">
-<p>
-Crie uma página de login para o usuário. Quando o usuário acerta o E-mail e senha você deve salvar o nome e o id dele na sessão.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgf6985a5" class="outline-3">
-<h3 id="orgf6985a5"><span class="section-number-3">2.11</span> Exercício 6</h3>
-<div class="outline-text-3" id="text-2-11">
-<p>
-Crie uma página que cria uma lista de compras. O dono é o usuário logado (id na sessão).
-</p>
-</div>
-</div>
-
-<div id="outline-container-org58cb6b3" class="outline-3">
-<h3 id="org58cb6b3"><span class="section-number-3">2.12</span> Exercício 7</h3>
-<div class="outline-text-3" id="text-2-12">
-<p>
-Crie uma página que insere itens em uma lista do usuário. Mostre as listas do usuário em um campo.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgcb95734" class="outline-3">
-<h3 id="orgcb95734"><span class="section-number-3">2.13</span> Exercício 8</h3>
-<div class="outline-text-3" id="text-2-13">
-<p>
-Crie uma página que mostra a lista do usuário.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org4b3e119" class="outline-3">
-<h3 id="org4b3e119"><span class="section-number-3">2.14</span> Exercício 9</h3>
-<div class="outline-text-3" id="text-2-14">
-<p>
-Crie uma página que permite o compartilhamento da lista.
+Crie uma p�gina php chamada (teste.php) que verifica se a conex�o com o servidor de banco de dados est� sendo feita corretamente utilizando mysqli orientado a objetos.
 </p>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2019-09-30 seg 19:32</p>
+<p class="date">Created: 2019-10-01 ter 16:54</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
